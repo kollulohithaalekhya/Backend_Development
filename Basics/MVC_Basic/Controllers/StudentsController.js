@@ -3,7 +3,9 @@ const getStudents=(req,res)=>{
     res.status(200).json({data:stddata});
 }
 const addStudents=(req,res)=>{
-    res.status(201).json({message:"Data Recieved"});
+    let user=req.body;
+    res.status(201).json({message:"Data Recieved",data:user});
+    console.log(user);
 }
 const deleteStudents=(req,res)=>{
     res.status(200).json({message:"Deleted"});

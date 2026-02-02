@@ -1,0 +1,79 @@
+body {
+  background: radial-gradient(circle at top, #252525, #0f0f0f);
+  color: #f1f1f1;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.form {
+  background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
+  padding: 32px;
+  border-radius: 14px;
+  width: 360px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  animation: fadeUp 0.6s ease;
+}
+.form h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 22px;
+  letter-spacing: 0.5px;
+}
+.form input {
+  width: 90%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background: #121212;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.form input:focus {
+  border-color: #4f9cff;
+  box-shadow: 0 0 0 3px rgba(79, 156, 255, 0.25);
+  background: #0e0e0e;
+}
+.form input::placeholder {
+  color: #777;
+}
+.form button {
+  width: 98%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #4f9cff, #2b6fff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 156, 255, 0.4);
+}
+.form button:active {
+  transform: scale(0.98);
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

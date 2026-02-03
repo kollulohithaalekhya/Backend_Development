@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+.update-form {
+  background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
+  padding: 32px;
+  border-radius: 14px;
+  width: 340px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  animation: scaleIn 0.35s ease;
+}
+
+.update-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  background: #121212;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.update-form input:focus {
+  border-color: #4f9cff;
+  box-shadow: 0 0 0 3px rgba(79, 156, 255, 0.25);
+  background: #0e0e0e;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btns button:first-child {
+  background: linear-gradient(135deg, #4f9cff, #2b6fff);
+  color: #fff;
+}
+
+.btns button:last-child {
+  background: #2a2a2a;
+  color: #bbb;
+}
+
+.btns button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 156, 255, 0.35);
+}
+
+.btns button:active {
+  transform: scale(0.97);
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
